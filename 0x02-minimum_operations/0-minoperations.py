@@ -12,11 +12,11 @@ def minOperations(n):
     """
     if n < 2:
         return 0
-    opers, root = 0, 2
+    opers, divisor = 0, 2
     while root <= n:
-        if n % root == 0:
-            opers += root
-            n = n / root
+        if n % divisor == 0:
+            opers += divisor
+            n = n / divisor
             root -= 1
-        root += 1
+        divisor += 1
     return opers
