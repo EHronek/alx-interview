@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" 
+"""
 Module defines a method that calculates the fewest number of operations
 needed to result in exactly n H characters in a file
 """
