@@ -3,6 +3,7 @@
 import sys
 import re
 
+
 def print_stats(status_codes, total_size):
     """Prints the statistics"""
     print("File size: {}".format(total_size))
@@ -28,7 +29,7 @@ def main():
         for line in sys.stdin:
             line_count += 1
             match = re.match(
-                r'^\S+ - \[.*\] "GET /projects/260 HTTP/1\.1" (\d{3}) (\d+)$', 
+                r'^\S+ - \[.*\] "GET /projects/260 HTTP/1\.1" (\d{3}) (\d+)$',
                 line.strip()
             )
             if not match:
@@ -49,6 +50,7 @@ def main():
         raise
 
     print_stats(status_codes, total_size)
+
 
 if __name__ == "__main__":
     main()
