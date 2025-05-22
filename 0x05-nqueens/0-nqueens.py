@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ The n queens algorithm"""
 import sys
 
@@ -40,5 +40,5 @@ def solve(n):
         k = []
         i = 0
 
-
-solve(n)
+if __name__ == "__main__":
+    solve(n)
